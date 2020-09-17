@@ -31,3 +31,11 @@ body, a:link, a:visited, a:active{
   /* border-radius:10px; */
   position:absolute;
 }
+
+.popDance{
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid white;
+}
