@@ -49,6 +49,11 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+.blinkyDancer{
+  border:10px solid red;
+  border-radius:10px;
+  position:absolute;
+}
 
 .wildDancer{
   border:10px solid green;
