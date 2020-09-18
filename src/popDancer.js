@@ -9,8 +9,7 @@ makePopDancer.prototype.constructor = makePopDancer;
 makePopDancer.prototype.oldStep = makeDancer.prototype.step;
 makePopDancer.prototype.step = function() {
   this.oldStep();
-  //update timeBetweenSteps to a set value to make a smooth transition
-  // this.timeBetweenSteps = 16;
-
-
+  this.timeBetweenSteps = 16;
+  this.top += 1;
+  this.setPosition(this.top, this.left);
 };
