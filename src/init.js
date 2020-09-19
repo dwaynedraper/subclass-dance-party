@@ -1,5 +1,6 @@
 $(document).ready(function() {
   window.dancers = [];
+  let arr = window.dancers;
 
   $('.addDancerButton').on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
@@ -34,5 +35,34 @@ $(document).ready(function() {
   $('.lineUp').on('click', function(event) {
     lineUp();
   });
+  $('body').on('mouseover', 'span', function(event) {
+    console.log('working');
+    $('span.wildDancer').css('border', '20px solid yellow');
+  });
+  $('body').on('mouseover', 'span', function(event) {
+    console.log('working');
+    $('span.dancer').css('border', '20px solid cornflowerblue');
+  });
+  $('body').on('mouseover', 'span', function(event) {
+    console.log('working');
+    $('span.popDancer').css('border', '20px solid magenta');
+  });
+  // $.each(arr, function() {
+  //   this.mouseover(function() {
+  //     this.css('color', 'pink');
+  //   });
+  // });
+  // $(".popDancer").on('mouseover', function() {
+  //   $(".popDancer").css("border", "pink");
+  // });
+  // $(".popDancer").mouseover(function(event) {
+  //   console.log('working');
+  //   // this.css("border", "pink");
+  //   var $something = $(event.target);
+  //   $something.css("border", "20 px solid pink");
+  // });
+  // $('span').mouseover(function(event) {
+  //   $(this).find('.wildDancer').css('border', '20px solid yellow');
+  // });
 });
 
