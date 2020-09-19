@@ -12,10 +12,20 @@ describe('blinkyDancer', function() {
     expect(blinkyDancer.$node).to.be.an.instanceof(jQuery);
   });
 
+  it('should be an instance of dancer', function() {
+    let testDancer = new makeBlinkyDancer();
+    expect(testDancer).to.be.an.instanceof(makeBlinkyDancer);
+  });
+
   it('should have a step function that makes its node blink', function() {
     sinon.spy(blinkyDancer.$node, 'toggle');
     blinkyDancer.step();
     expect(blinkyDancer.$node.toggle.called).to.be.true;
+  });
+
+  it('should inherit properties from dancer', function() {
+    let blinkyDancer = new makeBlinkyDancer();
+    expect(blinkyDancer).to.have.property('step');
   });
 
   describe('dance', function() {
