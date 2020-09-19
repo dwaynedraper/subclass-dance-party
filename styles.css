@@ -1,5 +1,13 @@
+background {
+  background-repeat: no-repeat;
+  background-size: 300px 100px;
+}
 body {
+  font-family: 'Kumbh Sans', sans-serif;
   padding: 50px;
+  background-image: url(https://1.bp.blogspot.com/-Dl30vhotSck/U2roN3ZAlBI/AAAAAAAAPV4/G_frKDsAluQ/s1600/dog-gif-party.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .popDancer {
   width: 100px;
@@ -37,9 +45,15 @@ body, a:link, a:visited, a:active{
   padding:5px 12px;
   float:right;
 }
+
+a:hover {
+  background-color: cornflowerblue;
+}
+
 .topbar{
   height:32px;
-  background-color: #555;
+  background-color: rgba(85, 139, 233, 0.5)
+
 }
 .title{
   background-color: #777;
@@ -74,3 +88,4 @@ body, a:link, a:visited, a:active{
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
